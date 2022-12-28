@@ -9,7 +9,7 @@
 <meta name="twitter:image" content="https://ts1.cn.mm.bing.net/th/id/R-C.94392c42ee76cbbc5ba9f3490099c4f6?rik=rzFW6E%2bIbQohMA&riu=http%3a%2f%2ft1.tp88.net%2fuploads%2fallimg%2f2005%2fco20051Q55249-3.jpg&ehk=87ejvg%2f2PrYa%2bRrBQGKl2DI8FZ%2fL604RHRSvBcq6IYY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"><link rel="shortcut icon" href="https://ts1.cn.mm.bing.net/th/id/R-C.94392c42ee76cbbc5ba9f3490099c4f6?rik=rzFW6E%2bIbQohMA&riu=http%3a%2f%2ft1.tp88.net%2fuploads%2fallimg%2f2005%2fco20051Q55249-3.jpg&ehk=87ejvg%2f2PrYa%2bRrBQGKl2DI8FZ%2fL604RHRSvBcq6IYY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"><link rel="canonical" href="http://jiangjize1.gitee.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"can't find：${query}"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
   noticeOutdate: undefined,
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/j
     .then(response => response.json())
     .then(data => {
       if (true) {
-        const from = '出自 ' + data.from
+        const from = 'From ' + data.from
         const sub = []
         sub.unshift(data.hitokoto, from)
         window.typed = new Typed('#subtitle', {
